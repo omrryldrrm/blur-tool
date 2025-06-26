@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Blur Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Manual Blur Tool</h1>
+        <input type="file" id="upload" accept="image/*">
+        <div class="controls">
+            <label for="blur">Blur amount:</label>
+            <input type="range" id="blur" min="0" max="20" value="5">
+            <span id="blurValue">5</span> px
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="buttons">
+            <button id="download" disabled>Download Result</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
